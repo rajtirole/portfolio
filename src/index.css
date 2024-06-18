@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8e8e8e;
+  border-radius: 20px;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f9f9f9;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.logos ul li img {
+  /* height: 5rem; */
+  transition: all 0.3s ease-in-out;
+  /* width: 11rem; */
+  cursor: pointer;
+}
+
+.logos ul li img:hover {
+  -webkit-transform: translateY(-0.5rem);
+  transform: translateY(-0.5rem);
+}
+
+.project-img {
+  transform: translateY(0%);
+  transition: transform 10s ease-in-out 0s;
+}
+.project-img:hover {
+  transform: translateY(-83%);
+  transition: transform 10s ease-in-out 0s;
+}
+.project-stack p {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #000 !important;
+  font-weight: 600 !important;
+  padding: 0.5rem 0.8rem;
+}
+
+.footer-links a:hover {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+}
